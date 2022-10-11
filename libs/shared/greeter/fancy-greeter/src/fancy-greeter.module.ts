@@ -9,6 +9,7 @@ import {FancyModelModule} from '@kauppfbi-blogs/greeter/fancy-model';
     FancyGreeterComponent
   ],
   imports: [
+
     CommonModule,
     FancyModelModule,
   ],
