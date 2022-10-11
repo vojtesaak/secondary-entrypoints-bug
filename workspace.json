@@ -9,7 +9,9 @@
       "targets": {
         "build": {
           "executor": "@angular-devkit/build-angular:browser",
-          "outputs": ["{options.outputPath}"],
+          "outputs": [
+            "{options.outputPath}"
+          ],
           "options": {
             "outputPath": "dist/apps/angular-msal-example",
             "index": "apps/angular-msal-example/src/index.html",
@@ -20,7 +22,9 @@
               "apps/angular-msal-example/src/favicon.ico",
               "apps/angular-msal-example/src/assets"
             ],
-            "styles": ["apps/angular-msal-example/src/styles.css"],
+            "styles": [
+              "apps/angular-msal-example/src/styles.css"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -82,13 +86,17 @@
               "apps/angular-msal-example/src/**/*.html"
             ]
           },
-          "outputs": ["{options.outputFile}"]
+          "outputs": [
+            "{options.outputFile}"
+          ]
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": ["coverage/apps/angular-msal-example"],
+          "outputs": [
+            "coverage/apps/angular-msal-example"
+          ],
           "options": {
-            "jestConfig": "apps/angular-msal-example/jest.config.js",
+            "jestConfig": "apps/angular-msal-example/jest.config.ts",
             "passWithNoTests": true
           }
         }
@@ -116,16 +124,23 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": ["apps/angular-msal-example-e2e/**/*.{js,ts}"]
+            "lintFilePatterns": [
+              "apps/angular-msal-example-e2e/**/*.{js,ts}"
+            ]
           },
-          "outputs": ["{options.outputFile}"]
+          "outputs": [
+            "{options.outputFile}"
+          ]
         }
       },
       "tags": [],
-      "implicitDependencies": ["angular-msal-example"]
+      "implicitDependencies": [
+        "angular-msal-example"
+      ]
     },
     "shared-greeter": "libs/shared/greeter",
     "test": "apps/test",
     "test-e2e": "apps/test-e2e"
-  }
+  },
+  "$schema": "./node_modules/nx/schemas/workspace-schema.json"
 }

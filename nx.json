@@ -18,13 +18,16 @@
     "default": {
       "runner": "@nrwl/nx-cloud",
       "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"],
-        "accessToken": "OTQ5MTBjNjItNzgyYy00MTQwLThmMDQtNThkYWQ2Y2IzMjIyfHJlYWQtd3JpdGU="
+        "cacheableOperations": [
+          "build",
+          "lint",
+          "test",
+          "e2e"
+        ],
+        "accessToken": "OTQ5MTBjNjItNzgyYy00MTQwLThmMDQtNThkYWQ2Y2IzMjIyfHJlYWQtd3JpdGU=",
+        "parallel": 1
       }
     }
-  },
-  "cli": {
-    "defaultCollection": "@nrwl/angular"
   },
   "generators": {
     "@nrwl/angular:application": {
@@ -34,7 +37,6 @@
       "e2eTestRunner": "cypress"
     },
     "@nrwl/angular:library": {
-      "style": "css",
       "linter": "eslint",
       "unitTestRunner": "jest"
     },
@@ -42,5 +44,6 @@
       "style": "css"
     }
   },
-  "defaultProject": "angular-msal-example"
+  "defaultProject": "angular-msal-example",
+  "$schema": "./node_modules/nx/schemas/nx-schema.json"
 }
