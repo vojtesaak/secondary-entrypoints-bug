@@ -1,2 +1,2 @@
-export * from './lib/fancy-greeter.module';
-export * from './lib/fancy-greeter.component'
+export * from './fancy-greeter.module';
+export * from './fancy-greeter.component'

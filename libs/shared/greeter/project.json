@@ -1,6 +1,6 @@
 {
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "projectType": "library",
-  "root": "libs/shared/greeter",
   "sourceRoot": "libs/shared/greeter/src",
   "prefix": "kauppfbi-blogs",
   "targets": {
@@ -24,7 +24,7 @@
       "executor": "@nrwl/jest:jest",
       "outputs": ["coverage/libs/shared/greeter"],
       "options": {
-        "jestConfig": "libs/shared/greeter/jest.config.js",
+        "jestConfig": "libs/shared/greeter/jest.config.ts",
         "passWithNoTests": true
       }
     },
@@ -35,9 +35,12 @@
           "libs/shared/greeter/src/**/*.ts",
           "libs/shared/greeter/src/**/*.html",
           "libs/shared/greeter/fancy-greeter/**/*.ts",
-          "libs/shared/greeter/fancy-greeter/**/*.html"
+          "libs/shared/greeter/fancy-greeter/**/*.html",
+          "libs/shared/greeter/fancy-model/**/*.ts",
+          "libs/shared/greeter/fancy-model/**/*.html"
         ]
-      }
+      },
+      "outputs": ["{options.outputFile}"]
     }
   },
   "tags": []

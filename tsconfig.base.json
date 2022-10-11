@@ -18,9 +18,22 @@
       "@kauppfbi-blogs/fancy-greeter": [
         "libs/shared/fancy-greeter/src/index.ts"
       ],
+      "@kauppfbi-blogs/feature-apps": ["libs/shared/feature-apps/src/index.ts"],
+      "@kauppfbi-blogs/feature-apps/apps-ico": [
+        "libs/shared/feature-apps/apps-ico/src/index.ts"
+      ],
+      "@kauppfbi-blogs/feature-apps/sdk-app-invite": [
+        "libs/shared/feature-apps/sdk-app-invite/src/index.ts"
+      ],
+      "@kauppfbi-blogs/feature-apps/sdk-apps": [
+        "libs/shared/feature-apps/sdk-apps/src/index.ts"
+      ],
       "@kauppfbi-blogs/greeter": ["libs/shared/greeter/src/index.ts"],
       "@kauppfbi-blogs/greeter/fancy-greeter": [
         "libs/shared/greeter/fancy-greeter/src/index.ts"
+      ],
+      "@kauppfbi-blogs/greeter/fancy-model": [
+        "libs/shared/greeter/fancy-model/src/index.ts"
       ]
     }
   },

@@ -1,18 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FancyGreeterComponent } from './fancy-greeter.component';
+import { FancyModelComponent } from './fancy-model.component';
 
 
 
 @NgModule({
   declarations: [
-    FancyGreeterComponent
+    FancyModelComponent
   ],
   imports: [
     CommonModule
   ],
   exports: [
-    FancyGreeterComponent
+    FancyModelComponent
   ]
 })
-export class FancyGreeterModule { }
+export class FancyModelModule { }
